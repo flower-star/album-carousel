@@ -1,0 +1,127 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+/* ---------del--------- */
+.album {
+  margin: 50px;
+}
+/* ------------------ */
+.album li {
+  list-style: none;
+}
+.album {
+  display: flex;
+}
+.album .left-slide {
+  position: relative;
+  box-sizing: border-box;
+  width: 928px;
+  height: 580px;
+  overflow: hidden;
+}
+.album .left-slide .hd {
+  position: absolute;
+  bottom: 10px;
+  width: 100%;
+  height: 10px;
+  z-index: 999;
+}
+.album .left-slide .hd ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.album .left-slide .hd ul li {
+  width: 10px;
+  height: 10px;
+  margin-right: 5px;
+  text-align: center;
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+.album .left-slide .hd ul li:last-child {
+  margin-right: 0;
+}
+.album .left-slide .hd .on {
+  background-color: #fff;
+}
+.album .left-slide .bd ul {
+  position: relative;
+  white-space: nowrap;
+}
+.album .left-slide .bd ul li {
+  display: inline-block;
+  width: 928px;
+  height: 580px;
+}
+.album .left-slide .bd ul li img {
+  min-width: 100%;
+  width: 100%;
+  height: 100%;
+}
+.album .left-slide .prev,
+.album .left-slide .next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 20px 10px;
+  font-size: 30px;
+  color: #fff;
+  border: none;
+  background: rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+  outline: none;
+}
+.album .left-slide .prev {
+  top: 50%;
+}
+.album .left-slide .next {
+  right: 0;
+}
+.album .right-slide {
+  position: relative;
+  box-sizing: border-box;
+  width: 230px;
+  height: 580px;
+  overflow: hidden;
+  cursor: pointer;
+}
+.album .right-slide .bd ul {
+  position: relative;
+}
+.album .right-slide .bd ul li {
+  width: 230px;
+  height: 145px;
+}
+.album .right-slide .bd ul li img {
+  min-width: 100%;
+  width: 100%;
+  min-height: 100%;
+}
+.album .right-slide .prev,
+.album .right-slide .next {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  font-size: 30px;
+  color: #fff;
+  border: none;
+  background: rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+  outline: none;
+}
+.album .right-slide .prev {
+  top: 0;
+}
+.album .right-slide .next {
+  bottom: 0;
+}
+.album .right-slide .cur-album {
+  box-sizing: border-box;
+  border: 2px solid #FF7701;
+}
+.album .hide {
+  display: none;
+}
